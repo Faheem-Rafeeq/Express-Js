@@ -12,4 +12,10 @@ router.get('/about', (req, res) => {
   res.send('About blogs')
 })
 
+
+router.get("/blogpost/:slug", (req, res) => {
+  res.send(`Slug is: ${req.params.slug}`);
+});
+
+
 module.exports = router
